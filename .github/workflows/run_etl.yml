@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Pentaho Data Integration
         run: |
-          wget --progress=dot:giga https://private.files.sourceforge.net/m/mi/mirror-ace-sjc1/projects/pentaho/Data%20Integration/9.4/pdi-ce-9.4.0.0-343.zip?viasf=1 -O pdi.zip
+          curl -L -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36" "https://sourceforge.net/projects/pentaho/files/Data%20Integration/9.4/pdi-ce-9.4.0.0-343.zip/download" -o pdi.zip
           unzip -q pdi.zip
           chmod +x data-integration/kitchen.sh
 
